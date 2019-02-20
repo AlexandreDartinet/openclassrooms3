@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="robots" content="noindex,nofollow"/>
+		<meta name="author" content="Alexandre Dartinet"/>
+		<meta name="description" content="Location de vélos"/>
+		<link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon"/>
+		<!-- Icones FontAwesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<!-- CSS leaftlet -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+		<!-- CSS marqueurs personalisés leaflet -->
+   		<link rel="stylesheet" href="css/leaflet.extra-markers.min.css"/>
+   		<!-- CSS clusters de marqueurs leaflet -->
+   		<link rel="stylesheet" type="text/css" href="css/leaflet.marker-cluster.css"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="mobile-web-app-capable" content="yes">
+		
+   		
+		<title>Location de vélos</title>
+	</head>
+	<body>
+		<!-- Conteneur pour naviguer entre les deux sections -->
+		<div id="navigation"><a href="#reservation" class="fas fa-chevron-down">Aller à la réservation</a></div>
+		<!-- Conteneur de la section du slider pour le tutoriel avec ses boutons de contrôle -->
+		<section id="slider" class="scroll">
+			<a class="pause slider-control fas fa-pause"></a>
+			<a class="next slider-control fas fa-chevron-right"></a>
+			<a class="prev slider-control fas fa-chevron-left"></a>
+		</section>
+		<!-- Conteneur de la section pour la réservation -->
+		<section id="reservation" class="scroll">
+			<!-- Conteneur de la carte leaflet -->
+			<div id="carte"></div>
+			<!-- Conteneur du formulaire de réservation -->
+			<div id="details"></div>
+			<!-- Conteneur des information si une réservation est en cours -->
+			<div id="info"></div>
+		</section>
+		<!-- Javascript pour la carte leaflet -->
+		<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js" integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg==" crossorigin=""></script>
+		<!-- Javascript jQuery -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<!-- Javascript plugin jQuery pour contrôler le scrolling dans une page -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js" integrity="sha256-RGlAwHKG24hsj1109SGQgvR+Orx7u8c6zyYH4Tk3ydU=" crossorigin="anonymous"></script>
+		<!-- Javascript pour le groupement des marqueurs leaflet -->
+		<script src="js/leaflet.markercluster.js"></script>
+		<!-- Javascript pour la création d'icones personalisées -->
+   		<script src="js/leaflet.extra-markers.min.js"></script>
+   		<!-- Javascript contenant les fonctions de base -->
+		<script src="js/functions.js"></script>
+		<!-- Javascript gérant le localStorage et sessionStorage -->
+		<script src="js/storage.js"></script>
+		<!-- Javascript gérant le slider du tutoriel -->
+		<script src="js/slider.js"></script>
+		<!-- Javascript gérant le canvas pour la signature -->
+		<script src="js/canvas.js"></script>
+		<!-- Javascript gérant l'affichage de la carte et les diverses actions de réservation -->
+		<script src="js/map.js"></script>
+		<!-- Javascript contenant la configuration -->
+		<script src="js/config.js"></script>
+		<!-- Javascript initialisant la page -->
+		<script src="js/main.js"></script>
+	</body>
+</html>

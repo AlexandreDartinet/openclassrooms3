@@ -1,0 +1,19 @@
+{
+	"slides": [
+		{
+			"name":"1 - Sélection",
+			"content":"Selectionnez la station ou vous souhaitez réserver un vélo.",
+			"img":"https://oc3.darkvcious.fr/img/tuto1.jpg"
+		},
+		{
+			"name":"2 - Réservation",
+			"content":"Cliquez sur le bouton Réserver, remplissez le formulaire, signez et validez.",
+			"img":"https://oc3.darkvcious.fr/img/tuto2.jpg"
+		},
+		{
+			"name":"3 - C'est fait !",
+			"content":"Votre réservation est validée, elle dure 20 minutes, vous pouvez l'annuler manuellement, elle s'annulera automatiquement si vous quittez la page.",
+			"img":"https://oc3.darkvcious.fr/img/tuto3.jpg"
+		}
+	]
+}
